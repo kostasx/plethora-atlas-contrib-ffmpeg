@@ -1,12 +1,16 @@
 {
   "name": "plethora-atlas-contrib-ffmpeg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "FFMPEG Utilities for Plethora Atlas Project",
   "main": "ffmpeg.js",
   "scripts": {
     "test": "mocha specs"
   },
   "author": "kostasx <minaidisk@gmail.com>",
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/kostasx/plethora-atlas-contrib-ffmpeg"
+  },
   "license": "ISC",
   "dependencies": {
     "colors": "^1.1.2",
