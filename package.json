@@ -1,0 +1,16 @@
+{
+  "name": "plethora-atlas-contrib-ffmpeg",
+  "version": "0.1.0",
+  "description": "FFMPEG Utilities for Plethora Atlas Project",
+  "main": "ffmpeg.js",
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "author": "kostasx <minaidisk@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "fluent-ffmpeg": "^2.1.0",
+    "shelljs": "^0.7.6"
+  }
+}
