@@ -14,7 +14,7 @@ initCommands = function(program) {
         output: options.output || null
       }).then(function(res) {
         return console.log(res);
-      });
+      })["catch"](console.log);
     }
   });
 };

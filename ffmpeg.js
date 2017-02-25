@@ -15,16 +15,18 @@ FFMPEG = {
     input = options.input;
     format = options.format;
     output = options.output;
-    if (!format) {
-      console.log("Error: Please provide a format".red);
-      process.exit();
-    }
-    if (!output) {
-      output = path.parse(input);
-      output = path.join(output.dir, output.name + "." + format);
-    }
     return new Promise(function(resolve, reject) {
       var binary, proc;
+      if (!format) {
+        reject({
+          msg: "Error: Please provide a format",
+          error: true
+        });
+      }
+      if (!output) {
+        output = path.parse(input);
+        output = path.join(output.dir, output.name + "." + format);
+      }
       binary = shell.which('ffmpeg');
       binary = "" + binary;
       proc = new ffmpeg({

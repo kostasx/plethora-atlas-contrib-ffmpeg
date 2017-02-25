@@ -24,6 +24,6 @@ initCommands = (program)->
 
 					console.log res
 
-				)
+				).catch(console.log)
 
 module.exports = initCommands
